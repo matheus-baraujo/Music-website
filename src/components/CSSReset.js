@@ -11,7 +11,7 @@ export const CSSReset = createGlobalStyle`
     font-family: sans-serif;
   }
   /* NextJS */
-  html {
+  /* html {
     display: flex;
     flex-direction: column;
     min-height: 100%;
@@ -23,7 +23,7 @@ export const CSSReset = createGlobalStyle`
   #__next {
     display: flex;
     flex: 1;
-  }
+  } */
   /* Globals */
   button,
   a {
@@ -32,7 +32,7 @@ export const CSSReset = createGlobalStyle`
     transition: .3s;
     &:hover,
     &:focus {
-      opacity: .5;
+      opacity: .6;
     }
   }
 `;
