@@ -14,7 +14,7 @@ const StyledCard = styled.div`
     }
 
     .cardInfo {
-        padding: 5px;
+        padding: 10px;
         border-radius: 0px 0px 25px 25px ;
     }
 
