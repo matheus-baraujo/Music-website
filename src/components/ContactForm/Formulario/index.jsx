@@ -17,6 +17,8 @@ function Formulario(props) {
     return (
         <Col xs={10} md={true} className="mb-3 mx-auto">
             <StyledDiv>
+                <h2 className="mb-3">Contato</h2>
+
                 <Form>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label>Email address</Form.Label>
@@ -28,7 +30,7 @@ function Formulario(props) {
                         <Form.Control type="password" placeholder="Password" />
                     </Form.Group>
 
-                    <Button type="submit">Submit</Button>
+                    <Button className="float-end" type="submit" variant="secondary">Submit</Button>
                 </Form>
             </StyledDiv>
         </Col>

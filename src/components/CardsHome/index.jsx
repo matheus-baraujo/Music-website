@@ -10,9 +10,14 @@ const StyledSection = styled.div`
     color: white;
     padding: 50px 0px;
 
-    p,
-    h4 {
+    p, h4 {
         font-style: italic;
+    }
+
+    @media screen and (max-width: 600px){
+        h4{
+            font-size: 1rem;
+        }       
     }
 `;
 
@@ -36,7 +41,7 @@ function CardsHome() {
                 <Row className="mb-3 mb-md-5">
                     <div className="mb-3">
                         <h2>Posts</h2>
-                        <h4>Texto subtitulo</h4>
+                        <h4>Veja aqui nossas postagens mais recentes!</h4>
                     </div>
 
                     {imgs.map((img) => {
@@ -47,7 +52,7 @@ function CardsHome() {
                 <Row className="mb-3 mb-md-5">
                     <div className="mb-3">
                         <h2>Playlists</h2>
-                        <h4>Texto subtitulo</h4>
+                        <h4>Veja aqui nossas playlists mais recentes!</h4>
                     </div>
 
                     {imgs2.map((img) => {

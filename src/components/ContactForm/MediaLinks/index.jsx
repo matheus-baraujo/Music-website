@@ -30,6 +30,10 @@ const StyledCard = styled.div`
         border-right: none;
         border-bottom: 1px solid white;
 
+        ul{
+            padding-left: 30%;
+        }
+
         a {
             font-size: 1rem;
         }
@@ -42,7 +46,7 @@ const StyledCard = styled.div`
 
 function SocialMedias(props) {
     return (
-        <Col xs={6} md={true} className="mb-3 mx-auto">
+        <Col xs={10} md={true} className="mb-3 mx-auto">
             <StyledCard>
                 <ul>
                     <li>

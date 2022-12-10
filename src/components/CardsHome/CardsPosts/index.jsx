@@ -15,15 +15,25 @@ const StyledCard = styled.div`
 
     .cardInfo {
         padding: 10px;
-        border-radius: 0px 0px 25px 25px ;
+        border-radius: 0px 0px 25px 25px;
     }
 
-    a{
-        color: #FF71A2;
+    a {
+        background-color: white;
+        float: right;
+        color: #ff71a2;
+        border-radius: 25px;
+        padding: 3px 10px;
+
+        &:hover{
+            opacity: 1;
+            color: white;
+            background-color: #642279;
+        }
     }
 
-    @media screen and (max-width: 600px){
-        img{
+    @media screen and (max-width: 600px) {
+        img {
             height: 120px;
         }
     }

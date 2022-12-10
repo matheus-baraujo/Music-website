@@ -22,15 +22,16 @@ const StyledMenu = styled.div`
         font-size: 2rem;
         transition: ease-in-out 0.3s;
 
+        &:hover {
+            color: white;
+            opacity: 1;
+            transform: translate(-3px, -3px);
+            text-shadow: 3px 3px 3px #ff71a2;
+        }
+
         @media screen and (max-width: 600px) {
             font-size: 1.5rem;
         }
-    }
-
-    a:hover {
-        color: white;
-        opacity: 0.6;
-        text-shadow: 3px 3px 3px #ff71a2;
     }
 
     .navbar-toggler {
@@ -38,15 +39,17 @@ const StyledMenu = styled.div`
         opacity: 0.6;
     }
 
-    #inner-page-nav{
-        
-            gap: 16px;
-        
+    #inner-page-nav {
+        gap: 16px;
     }
 
     #social-nav {
         a {
             color: #ff71a2;
+
+            &:hover{
+                color: white;
+            }
         }
     }
 `;

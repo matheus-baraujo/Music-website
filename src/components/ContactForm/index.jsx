@@ -63,8 +63,6 @@ function ContactForm() {
             </svg> */}
             
             <Container>
-                <h2 className="mb-3">Contato</h2>
-
                 <Row className="mb-3 mb-md-5">
                     <SocialMedias />
                     <Formulario />
