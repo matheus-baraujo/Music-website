@@ -1,9 +1,10 @@
 import styled from "styled-components";
-
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import CardPost from "./CardsPosts";
 import CardPlaylist from "./CardsPlaylists";
+
+import data from "../../../config.json"
 
 const StyledSection = styled.div`
     background-color: black;
@@ -21,18 +22,8 @@ const StyledSection = styled.div`
     }
 `;
 
-const imgs = [
-    "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-    "https://images.unsplash.com/photo-1566737236500-c8ac43014a67?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-    "https://images.unsplash.com/photo-1504704911898-68304a7d2807?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-];
-
-const imgs2 = [
-    "https://images.unsplash.com/photo-1477233534935-f5e6fe7c1159?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-    "https://images.unsplash.com/photo-1499415479124-43c32433a620?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80",
-    "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80",
-    "https://images.unsplash.com/photo-1483412033650-1015ddeb83d1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80",
-];
+const imgs = data.posts;
+const imgs2 = data.playlists;
 
 function CardsHome() {
     return (
@@ -45,7 +36,7 @@ function CardsHome() {
                     </div>
 
                     {imgs.map((img) => {
-                        return <CardPost img={img} />;
+                        return <CardPost img={img} key={img+1}/>;
                     })}
                 </Row>
 
@@ -56,7 +47,7 @@ function CardsHome() {
                     </div>
 
                     {imgs2.map((img) => {
-                        return <CardPlaylist img={img} />;
+                        return <CardPlaylist img={img} key={img+2}/>;
                     })}
                 </Row>
             </Container>
