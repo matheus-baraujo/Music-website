@@ -66,10 +66,10 @@ function Menu() {
                     >
                         <Nav className="me-auto" id="inner-page-nav">
                             <Nav.Link href="/">Home</Nav.Link>
-                            <Nav.Link href="/playlists">Playlists</Nav.Link>
-                            <Nav.Link href="/blog">Blog</Nav.Link>
-                            <Nav.Link href="/about">About</Nav.Link>
-                            <Nav.Link href="/contact">Contact</Nav.Link>
+                            <Nav.Link href="/">Playlists</Nav.Link>
+                            <Nav.Link href="/">Blog</Nav.Link>
+                            <Nav.Link href="/">About</Nav.Link>
+                            <Nav.Link href="/">Contact</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
 
